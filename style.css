@@ -5,3 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  height: 15vh;
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.logo-container {
+  margin-left: 2%;
+}
+
+.royal-home {
+  width: 100px;
+}
