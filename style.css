@@ -89,6 +89,11 @@ header {
   margin-left: 2%;
 }
 
+.action-bar a {
+  text-decoration: none;
+  color: #101720;
+}
+
 .navright-container .action-icon {
   font-size: 23px;
   cursor: pointer;
@@ -159,7 +164,7 @@ header {
 .items-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px;
   padding-left: 10%;
   padding-right: 10%;
@@ -186,7 +191,7 @@ header {
   transition: filter 0.3s ease;
 }
 
-.addToBag-btn {
+.btn-add-bag {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -205,12 +210,14 @@ header {
   font-size: 14px;
   font-weight: 400;
   margin: 5px 0px;
+  cursor: default;
 }
 
 .item-price {
   font-size: 0.93rem;
   color: #101720;
   font-weight: 600;
+  cursor: default;
 }
 
 .item-container:hover {
@@ -220,7 +227,7 @@ header {
   filter: blur(1px);
 }
 
-.item-container:hover .addToBag-btn {
+.item-container:hover .btn-add-bag {
   opacity: 1;
 }
 
