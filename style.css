@@ -91,10 +91,11 @@ header {
 
 .navright-container .action-icon {
   font-size: 23px;
+  cursor: pointer;
 }
 
 .bag-item-count {
-  background-color: #f16565;
+  background-color: #101720;
   white-space: nowrap;
   text-align: center;
   line-height: 15px;
@@ -149,33 +150,55 @@ header {
   font-size: 40px;
 }
 
-.items-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10px;
-
-  padding-left: 10%;
-  padding-right: 10%;
-  gap: 20px;
-}
-
 .heading {
   margin: 2% 4%;
   font-size: 25px;
   font-weight: 600;
 }
+/* Items Css */
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px;
+}
 
 .item-container {
   width: 270px;
   height: 430px;
+  position: relative;
   transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 80%;
 }
 
 .item-image {
   width: 100%;
-  height: 80%;
+  height: 100%;
   object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.addToBag-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #101720;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .item-name {
@@ -192,6 +215,13 @@ header {
 
 .item-container:hover {
   transform: scale(1.1);
+}
+.item-container:hover .item-image {
+  filter: blur(1px);
+}
+
+.item-container:hover .addToBag-btn {
+  opacity: 1;
 }
 
 /* Footer */
@@ -298,6 +328,7 @@ footer {
 .social-icons {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .copyright-container {
