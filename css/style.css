@@ -7,7 +7,7 @@
 }
 /* header */
 header {
-  height: 10vh;
+  min-height: 10vh;
   background-color: #f5f5f5;
   display: flex;
 }
@@ -33,6 +33,7 @@ header {
   font-size: 15px;
   color: #101720;
   text-decoration: none;
+  transition: 0.2s all ease-in;
 }
 .nav-bar a:hover {
   color: #274f80;
@@ -237,7 +238,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 1rem;
-  height: 48vh;
+  min-height: 48vh;
   background-color: #f5f5f5;
   width: 100%;
 }
