@@ -54,48 +54,42 @@
     </header>
     <main>
       <div class="container-wrapper">
-        <div class="table-container">
-          <table>
-            <tr>
-              <th class="product-info-heading">Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-            </tr>
-            <tr>
-              <td class="product-info">
-                <img
-                  class="bag-item-image"
-                  src="../assets/Images/1.jpg"
-                  alt="item-image"
-                />
-                <span>Timex Men Black Round Dial Analog Watch - TWEG20208</span>
-              </td>
-              <td>Rs 12995</td>
-              <td>
-                <div class="quantity-control">
-                  <div class="quantity-box">
-                    <button class="quantity-btn">-</button>
-                    <span class="quantity">1</span>
-                    <button class="quantity-btn">+</button>
-                  </div>
-                  <a href="#" class="remove-link">Remove</a>
-                </div>
-              </td>
-              <td>Rs 12995</td>
-            </tr>
-          </table>
+        <div class="cart-container">
+          <div class="cart-header">
+            <div class="header-item header-item-product">Product</div>
+            <div class="header-item header-item-price">Price</div>
+            <div class="header-item header-item-quantity">Quantity</div>
+            <div class="header-item header-item-total">Total</div>
+          </div>
+          <div class="cart-item">
+            <div class="product">
+              <img
+                src="../assets/Images/1.jpg"
+                alt="Timex Men Black Round Dial Analog Watch"
+              />
+              <div class="product-details">
+                <p>Timex Men Black Round Dial Analog Watch - TWEG20208</p>
+              </div>
+            </div>
+            <div class="price">Rs 12995</div>
+            <div class="quantity-control">
+              <div class="quantity-box">
+                <button class="quantity-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+              <a href="#" class="remove-link">Remove</a>
+            </div>
+            <div class="total">Rs 12995</div>
+          </div>
         </div>
         <div class="cart-summary">
-          <div class="cart-totals">
-            <span>Subtotal</span>
-            <span>Rs 23892</span>
+          <div class="total-details">
+            <div>Subtotal</div>
+            <div>₹ 15,495</div>
           </div>
-          <div class="checkout-buttons">
-            <button class="checkout-btn">PROCEED TO CHECKOUT</button>
-            <button class="continue-btn">
-              <a href="../index.html">CONTINUE SHOPPING</a>
-            </button>
+          <div class="continue-container">
+            <button class="continue-btn">CONTINUE SHOPPING</button>
           </div>
         </div>
       </div>
